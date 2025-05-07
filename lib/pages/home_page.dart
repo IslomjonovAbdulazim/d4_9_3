@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:showcaseview/showcaseview.dart';
 
@@ -32,8 +33,14 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Spacer(),
-
+                  Text("See All"),
                 ],
+              ),
+              Spacer(),
+              CupertinoButton(
+                color: Colors.yellow,
+                onPressed: () {},
+                child: Center(child: Text("Order Now")),
               ),
             ],
           ),
