@@ -7,6 +7,7 @@ void main() {
   runApp(
     ShowCaseWidget(
       builder: (context) => DevicePreview(
+        enabled: false,
         builder: (context) => MyApp(),
       ),
     ),

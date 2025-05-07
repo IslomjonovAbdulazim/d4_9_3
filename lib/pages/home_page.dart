@@ -21,7 +21,21 @@ class _HomePageState extends State<HomePage> {
         child: Padding(
           padding: EdgeInsets.all(20),
           child: Column(
-            children: [],
+            children: [
+              Row(
+                children: [
+                  Text(
+                    "Your Cart",
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Spacer(),
+
+                ],
+              ),
+            ],
           ),
         ),
       ),
