@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,17 +16,36 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: [],
+          ),
+        ),
+      ),
+    );
   }
 }
 
 class ShowcaseWidget extends StatelessWidget {
+  final GlobalKey key;
+  final String desc;
+  final Widget child;
+
   const ShowcaseWidget({
-    super.key,
+    required this.key,
+    required this.desc,
+    required this.child,
   });
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Showcase(
+      key: key,
+      description: desc,
+      child: child,
+    );
   }
 }
